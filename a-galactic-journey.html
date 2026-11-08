@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Galactic Journey – Firewing Games</title>
+  <meta name="description" content="A Galactic Journey: crew a ship together, power it, fly it and shoot down the storm. Coming soon from Firewing Games.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">🔥 Firewing<span>Games</span></a>
+    <nav>
+      <a href="index.html#games">Games</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="game-hero">
+      <span class="tag">Coming soon</span>
+      <h1>A Galactic Journey</h1>
+      <p class="tagline">Crew a ship together: power it, fly it, and shoot down the storm.</p>
+    </section>
+
+    <section class="game-body">
+      <img class="wide" src="img/a-galactic-journey/engineer-view-power-grid.png" alt="The engineer view, a schematic map of the ship's power grid">
+
+      <h2>What it is</h2>
+      <p>A Galactic Journey is a 2D top-down game set aboard a spaceship and on space stations. You walk around on foot, and the ship's systems are things you operate at stations: a pilot's chair to fly, a gunnery console to aim the turret, and a generator and engineer console that decide where the power goes.</p>
+      <p>Power is the central idea. Engines, doors, lights and consoles all draw from a shared generator grid, and the engineer decides what is wired to what. Cut the power to an engine and the ship flies differently; cut it to a door and you have to crank it open by hand. Recurring asteroid storms come at the ship from all sides and have to be shot down by the turret gunner.</p>
+      <p>Play with up to 4 players in co-op, or on your own.</p>
+      <p class="meta">2D top-down, co-op or single-player. PC (Windows); other platforms to be announced. Made with Unity.</p>
+
+      <h2>Spotlight</h2>
+
+      <div class="spot">
+        <h3>A power grid you wire yourself</h3>
+        <p>Every powered thing on the ship (engines, doors, lights, the gunnery console) draws from a generator that can only supply so much. The engineer opens a schematic map of the ship and clicks one node and then another to wire them together, or clicks a wired pair again to cut it. A starved engine glows dimmer and pushes less, a door without power stays shut, and a gunnery console without power cannot be used at all. It turns "keep the ship running" into a puzzle the crew solves out loud, because whatever you power up, something else may go dark.</p>
+        <div class="shots">
+          <img src="img/a-galactic-journey/engineer-view-power-grid.png" alt="Engineer view with all consumers powered">
+          <img src="img/a-galactic-journey/engineer-view-grid-unpowered.png" alt="Engineer view with the grid cut and a red door lamp">
+        </div>
+      </div>
+
+      <div class="spot">
+        <h3>A ship you fly with physical thrusters</h3>
+        <p>The pilot sits in the bridge chair and flies the ship with W/S for forward and reverse, A/D to slide sideways and Q/E to turn. The ship is not steered by magic: each thruster pushes at its own place on the hull, and the main engines only push as hard as their power allows. If one engine dies, the ship drifts and swings round, and the remaining thrusters work to counter the spin as far as they can. It makes the engineer's decisions felt immediately by the pilot.</p>
+      </div>
+
+      <div class="spot">
+        <h3>Asteroid storms and the gunnery turret</h3>
+        <p>At intervals a wave of small asteroids is launched at the ship from every direction. The gunner takes the turret console, and the camera pulls out to the ship; the twin barrels follow the mouse but can only turn so fast, so you have to lead your shots. Any asteroid that reaches the hull bursts and shoves the ship. The turret needs power from the grid, so a gunner loses the gun if the power goes out mid-wave.</p>
+      </div>
+
+      <div class="spot">
+        <h3>Procedural space stations</h3>
+        <p>Stations are generated from a 16-digit seed, so the same seed always gives the same station: rooms, corridors, doors and residents. Each resident has a schedule and walks to different rooms through the day, which you can follow with the station clock and speed controls, or by selecting residents on the map.</p>
+        <div class="shots">
+          <img src="img/a-galactic-journey/station-generated-overview.png" alt="Overview of a procedurally generated space station">
+        </div>
+      </div>
+
+      <h2>Features</h2>
+      <ul class="features">
+        <li>Walk around the ship on foot, with a dash</li>
+        <li>Pilot chair with forward, reverse, sideways slide and turning</li>
+        <li>Physical ship flight with a thruster at each point on the hull</li>
+        <li>Twin-barrelled turret that follows the mouse and fires laser bolts</li>
+        <li>Recurring asteroid storms from every direction</li>
+        <li>Shared power grid with a limited-capacity generator</li>
+        <li>Engineer view: wire and cut power connections on a schematic map</li>
+        <li>Power doors that open as you approach, or by hand when unpowered</li>
+        <li>Engine glow that follows its power supply</li>
+        <li>Handheld laser gun, and player health with respawn</li>
+        <li>Co-op for up to 4 players, or single-player</li>
+        <li>Seed-based procedural space stations</li>
+        <li>Station residents with daily schedules, and a free-look camera with pan and zoom</li>
+      </ul>
+
+      <a class="btn" href="index.html#games">&larr; Back to all games</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Firewing Games. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
